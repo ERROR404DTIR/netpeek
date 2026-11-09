@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="200" viewBox="0 0 900 200" role="img" aria-label="netpeek">
+  <style>
+    .bg { fill: #0d1117; }
+    .ring { fill: none; stroke: #2dd4bf; stroke-width: 2; opacity: 0;
+            transform-box: fill-box; transform-origin: center; animation: pulse 3s ease-out infinite; }
+    .r2 { animation-delay: 1s; } .r3 { animation-delay: 2s; }
+    @keyframes pulse { 0% { transform: scale(.2); opacity: .9; } 100% { transform: scale(2.8); opacity: 0; } }
+    .dot { fill: #2dd4bf; }
+    .blip { fill: #f472b6; animation: blink 3s ease-in-out infinite; }
+    .b2 { animation-delay: .8s; } .b3 { animation-delay: 1.6s; }
+    @keyframes blink { 0%, 100% { opacity: .15; } 50% { opacity: 1; } }
+    .t { font: 700 56px ui-monospace, Menlo, Consolas, monospace; fill: #e6edf3; }
+    .s { font: 18px ui-monospace, Menlo, Consolas, monospace; fill: #8b949e; }
+  </style>
+  <rect class="bg" width="900" height="200" rx="14"/>
+  <circle class="ring" cx="150" cy="100" r="40"/>
+  <circle class="ring r2" cx="150" cy="100" r="40"/>
+  <circle class="ring r3" cx="150" cy="100" r="40"/>
+  <circle class="dot" cx="150" cy="100" r="6"/>
+  <circle class="blip" cx="195" cy="68" r="4"/>
+  <circle class="blip b2" cx="112" cy="138" r="4"/>
+  <circle class="blip b3" cx="205" cy="128" r="4"/>
+  <text class="t" x="290" y="108">netpeek</text>
+  <text class="s" x="293" y="142">see every device on your network</text>
+</svg>

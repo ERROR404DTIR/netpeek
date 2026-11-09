@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="270" viewBox="0 0 800 270" role="img" aria-label="netpeek terminal demo">
+  <style>
+    text { font: 14px ui-monospace, Menlo, Consolas, monospace; fill: #e6edf3; xml:space: preserve; }
+    .bg { fill: #0d1117; }
+    .dim { fill: #8b949e; } .cyan { fill: #22d3ee; font-weight: 700; } .head { font-weight: 700; }
+    .green { fill: #4ade80; font-weight: 700; } .yellow { fill: #facc15; }
+    .row { opacity: 0; animation: show 9s ease-in-out infinite both; }
+    @keyframes show { 0% { opacity: 0; } 6% { opacity: 1; } 88% { opacity: 1; } 100% { opacity: 0; } }
+    .cursor { animation: blink 1s steps(1) infinite; fill: #e6edf3; }
+    @keyframes blink { 50% { opacity: 0; } }
+  </style>
+  <rect class="bg" width="800" height="270" rx="12"/>
+  <circle cx="24" cy="22" r="6" fill="#ff5f56"/><circle cx="44" cy="22" r="6" fill="#ffbd2e"/><circle cx="64" cy="22" r="6" fill="#27c93f"/>
+  <text class="dim" x="24" y="56">$ python netpeek.py --watch</text>
+  <rect class="cursor" x="236" y="44" width="8" height="15"/>
+
+  <g class="row" style="animation-delay:.3s"><text class="cyan" x="24" y="84">netpeek | 192.168.1.0/24 | 5 online | 21:04:12</text></g>
+  <g class="row" style="animation-delay:.6s"><text class="head" x="24" y="108">IP</text><text class="head" x="150" y="108">MAC</text><text class="head" x="330" y="108">VENDOR</text><text class="head" x="520" y="108">HOSTNAME</text><text class="head" x="670" y="108">LAST SEEN</text></g>
+  <g class="row" style="animation-delay:1s"><text x="24" y="132">192.168.1.1</text><text x="150" y="132">3C:A6:2F:12:34:56</text><text x="330" y="132">AVM FRITZ!</text><text x="520" y="132">fritz.box</text><text x="670" y="132">just now</text></g>
+  <g class="row" style="animation-delay:1.4s"><text x="24" y="152">192.168.1.23</text><text x="150" y="152">A4:83:E7:AA:BB:CC</text><text x="330" y="152">Apple</text><text x="520" y="152">macbook.lan</text><text x="670" y="152">just now</text></g>
+  <g class="row" style="animation-delay:1.8s"><text x="24" y="172">192.168.1.42</text><text x="150" y="172">B8:27:EB:01:02:03</text><text x="330" y="172">Raspberry Pi</text><text x="520" y="172">pihole.lan</text><text x="670" y="172">just now</text></g>
+  <g class="row" style="animation-delay:2.2s"><text x="24" y="192">192.168.1.57</text><text x="150" y="192">5C:AA:FD:9F:8E:7D</text><text x="330" y="192">Sonos</text><text x="520" y="192">living-room</text><text x="670" y="192">just now</text></g>
+  <g class="row" style="animation-delay:3.2s"><text class="green" x="24" y="212">192.168.1.88</text><text class="green" x="150" y="212">3A:11:C4:77:90:2E</text><text class="green" x="330" y="212">Private (random MAC)</text><text class="green" x="520" y="212">-</text><text class="green" x="670" y="212">just now  NEW</text></g>
+  <g class="row" style="animation-delay:3.6s"><text class="yellow" x="24" y="240">[21:04:22] NEW DEVICE  192.168.1.88  3A:11:C4:77:90:2E  Private (random MAC)</text></g>
+</svg>
